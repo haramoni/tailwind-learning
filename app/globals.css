@@ -1,4 +1,7 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 @theme {
   --color-mint-500: oklch(0.72 0.11 178);
   --color-julia-50: oklch(0.26 0.0739 145.93);
