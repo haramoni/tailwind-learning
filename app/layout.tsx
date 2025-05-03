@@ -1,18 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/providers/theme-provider";
-import ThemeSwitcher from "./components/theme-switcher";
+import { Sidebar } from "@/components/Sidebar/Sidebar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,17 +17,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" suppressHydrationWarning className="antialiased">
+      <body className={inter.className}>
         <ThemeProvider
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <ThemeSwitcher />
-          {children}
+          <div className="grid min-h-screen grid-teste">
+            <Sidebar />
+            <main className="px-4 pb-12 pt-8">{children}</main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

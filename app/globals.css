@@ -6,3 +6,17 @@
   --color-mint-500: oklch(0.72 0.11 178);
   --color-julia-50: oklch(0.26 0.0739 145.93);
 }
+
+@layer components {
+  .grid-teste {
+    display: grid;
+	  grid-template-columns: minMax(18rem, 20rem) 1fr;
+  }
+
+  .profile{
+    grid: max-content 1frr max-content
+  }
+}
+
+
+
