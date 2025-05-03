@@ -20,12 +20,6 @@ export function TabItem({ value, title, isSelected = false }: TabItemProps) {
 
       {isSelected && (
         <>
-          {/* <motion.div
-            layoutId="underline"
-            id="underline"
-            className="absolute -bottom-px left-0 right-0 h-0.5 bg-violet-700"
-          /> */}
-
           <AnimatePresence mode="wait">
             <motion.div
               initial={{ y: 10, opacity: 0 }}

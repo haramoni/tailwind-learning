@@ -16,6 +16,10 @@
   .profile{
     grid: max-content 1frr max-content
   }
+
+  .form-teste {
+     grid-template-columns: minMax(7.5rem, 17.5rem), minMax(25rem, 1fr), minMax(7.5rem, 15rem);
+  }
 }
 
 
