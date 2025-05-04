@@ -2,6 +2,7 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+
 @theme {
   --color-mint-500: oklch(0.72 0.11 178);
   --color-julia-50: oklch(0.26 0.0739 145.93);
@@ -15,10 +16,6 @@
 
   .profile{
     grid: max-content 1frr max-content
-  }
-
-  .form-teste {
-     grid-template-columns: minMax(7.5rem, 17.5rem), minMax(25rem, 1fr), minMax(7.5rem, 15rem);
   }
 }
 
