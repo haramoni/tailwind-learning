@@ -17,16 +17,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="antialiased">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="antialiased"
+    >
       <body className={inter.className}>
         <ThemeProvider
-          defaultTheme="system"
+          forcedTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="grid min-h-screen grid-teste">
+          <div className="min-h-screen lg:grid lg:grid-teste dark:bg-zinc-900">
             <Sidebar />
-            <main className="px-8 pb-12 pt-8">{children}</main>
+            <main className="px-4 p-12 pt-24 lg:col-start-2 lg:px-8 pb-12 lg:pt-8 max-w-screen">
+              {children}
+            </main>
           </div>
         </ThemeProvider>
       </body>

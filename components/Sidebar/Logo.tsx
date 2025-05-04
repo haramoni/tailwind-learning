@@ -1,6 +1,6 @@
 export function Logo() {
   return (
-    <strong className="flex mx-1 items-center gap-2 text-xl font-semibold text-zinc-900">
+    <strong className="flex mx-1 items-center gap-2 text-xl font-semibold text-zinc-900 dark:text-zinc-100">
       <svg
         width={38}
         height={38}
@@ -10,7 +10,14 @@ export function Logo() {
       >
         <g filter="url(#filter0_dd_226_307)">
           <g clipPath="url(#clip0_226_307)">
-            <rect x={3} y={2} width={32} height={32} rx={8} fill="#fff" />
+            <rect
+              x={3}
+              y={2}
+              width={32}
+              height={32}
+              rx={8}
+              fill="#fff"
+            />
             <rect
               x={3}
               y={2}
@@ -37,8 +44,14 @@ export function Logo() {
               d="M19 15.32a2.68 2.68 0 100 5.36 2.68 2.68 0 000-5.36zM16.243 18a2.757 2.757 0 115.514 0 2.757 2.757 0 01-5.514 0z"
               fill="#D0D5DD"
             />
-            <path d="M18.961 2h.078v32h-.078V2z" fill="#D0D5DD" />
-            <path d="M35 17.96v.079H3v-.078h32z" fill="#D0D5DD" />
+            <path
+              d="M18.961 2h.078v32h-.078V2z"
+              fill="#D0D5DD"
+            />
+            <path
+              d="M35 17.96v.079H3v-.078h32z"
+              fill="#D0D5DD"
+            />
             <path
               d="M29.602 2h.078v32h-.078V2zM13.64 2h.078v32h-.077V2zM24.282 2h.077v32h-.077V2zM8.32 2h.078v32H8.32V2z"
               fill="#D0D5DD"
@@ -83,7 +96,10 @@ export function Logo() {
             filterUnits="userSpaceOnUse"
             colorInterpolationFilters="sRGB"
           >
-            <feFlood floodOpacity={0} result="BackgroundImageFix" />
+            <feFlood
+              floodOpacity={0}
+              result="BackgroundImageFix"
+            />
             <feColorMatrix
               in="SourceAlpha"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -123,7 +139,10 @@ export function Logo() {
             filterUnits="userSpaceOnUse"
             colorInterpolationFilters="sRGB"
           >
-            <feFlood floodOpacity={0} result="BackgroundImageFix" />
+            <feFlood
+              floodOpacity={0}
+              result="BackgroundImageFix"
+            />
             <feColorMatrix
               in="SourceAlpha"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -163,8 +182,14 @@ export function Logo() {
             filterUnits="userSpaceOnUse"
             colorInterpolationFilters="sRGB"
           >
-            <feFlood floodOpacity={0} result="BackgroundImageFix" />
-            <feGaussianBlur in="BackgroundImageFix" stdDeviation={2.5} />
+            <feFlood
+              floodOpacity={0}
+              result="BackgroundImageFix"
+            />
+            <feGaussianBlur
+              in="BackgroundImageFix"
+              stdDeviation={2.5}
+            />
             <feComposite
               in2="SourceAlpha"
               operator="in"
@@ -185,7 +210,10 @@ export function Logo() {
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#fff" />
-            <stop offset={1} stopColor="#D0D5DD" />
+            <stop
+              offset={1}
+              stopColor="#D0D5DD"
+            />
           </linearGradient>
           <linearGradient
             id="paint1_linear_226_307"
@@ -196,10 +224,20 @@ export function Logo() {
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#53389E" />
-            <stop offset={1} stopColor="#6941C6" />
+            <stop
+              offset={1}
+              stopColor="#6941C6"
+            />
           </linearGradient>
           <clipPath id="clip0_226_307">
-            <rect x={3} y={2} width={32} height={32} rx={8} fill="#fff" />
+            <rect
+              x={3}
+              y={2}
+              width={32}
+              height={32}
+              rx={8}
+              fill="#fff"
+            />
           </clipPath>
         </defs>
       </svg>
