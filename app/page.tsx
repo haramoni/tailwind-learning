@@ -40,9 +40,9 @@ export default function Home() {
 
         <form
           id="settings"
-          className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200"
+          className="mt-6 flex w-full flex-col grid-cols-2 gap-1 divide-y divide-zinc-200"
         >
-          <div className="grid grid-cols-form gap-3 pb-10">
+          <div className="grid grid-cols-3 gap-4 pb-10">
             <label
               htmlFor="firstName"
               className="text-sm font-medium text-zinc-700"
